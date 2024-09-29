@@ -12,6 +12,7 @@ a {
 
 header {
   color: white;
+  background-color: rgb(80, 80, 193);
 }
 
 .container {
@@ -23,6 +24,32 @@ header {
 
 .link-list {
   list-style-type: none;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: white;
+  color: #222;
+  border: none;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+}
+
+.btn .xl {
+  border-radius: 24px;
+  padding: 16px 34px;
+  font-size: 1rem;
+}
+
+.btn .btn-secondary {
+  background-color: #222;
+  color: white;
+}
+
+.btn.btn:hover {
+  background-color: blueviolet;
 }
 /* # UPPER HEADER */
 
@@ -36,15 +63,16 @@ header {
 
 .upper-header > .container {
   display: flex;
+  align-items: center;
 }
 
 .upper-header .header-item {
   flex-basis: 20%;
   padding: 5px 10px;
-  background-color: rgb(57, 114, 188);
 
   /* # debug 
- border: 2px dashed black;
+ border: 2px dashed black; 
+ background-color: rgb(57, 114, 188);
   */
 }
 
@@ -60,6 +88,7 @@ header {
 
 .upper-header .link-item {
   display: inline-block;
+  margin: 0 15px;
 }
 /* # UPPER HERO */
 
